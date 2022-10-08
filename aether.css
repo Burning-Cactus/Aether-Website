@@ -1,0 +1,171 @@
+nav {
+    background-color: whitesmoke;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    list-style-type: none;
+    border: solid darkblue 1px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+header {
+    background-image: url("images/aether_logo.png");
+    background-size: 300px 90px;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 90px;
+}
+
+footer {
+    font-size: small;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    padding-top: 230px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#background {
+    background-color: white;
+    background-image: linear-gradient(skyblue, white);
+    background-size: 100%;
+    color: dimgray;
+}
+
+.bluebox {
+    background-color: lightblue;
+    box-shadow: black 3px 3px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin: 10px auto;
+}
+
+.downloadlink {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.horizontallist {
+    list-style-type: none;
+}
+
+.warning {
+    background-color: tan;
+    box-shadow: #715746 1px 1px;
+}
+
+@media (min-width: 600px) {
+    nav {
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    nav li {
+        border: none;
+        width: auto;
+        height: 40px;
+    }
+
+    nav a {
+        background: url("images/nav_buttons.png") no-repeat 0 0;
+        color: gray;
+        display: block;
+        height: 40px;
+        width: 140px;
+        line-height: 10px;
+        text-align: left;
+        transition: padding-left 0.5s, width 0.25s;
+    }
+
+    nav a:hover {
+        background: url("images/nav_buttons.png") no-repeat 0 -40px;
+        color: gold;
+        padding-left: 10px;
+        width: 240px;
+    }
+
+    span {
+        position: relative;
+        left: 45px;
+        top: 15px;
+    }
+
+    .horizontallist {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .onethird {
+        background-color: lightblue;
+        margin: 20px;
+    }
+
+    .twofifths {
+        background-color: lightblue;
+        width: 40%;
+        box-shadow: black 3px 3px;
+    }
+
+    form {
+        width: 60%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper, #sentry {
+        margin: auto;
+        width: 80%;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servers | The Aether</title>
+    <link rel="stylesheet" href="aether.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Aether mod for Minecraft, refined for the modern Minecrafter.">
+</head>
+<body id="background">
+<header></header>
+<div id="wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="features.html"><span>Features</span></a></li>
+            <li><a href="servers.html"><span>Servers</span></a></li>
+            <li><a href="media.html"><span>Media</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Aether Servers</h1>
+        <p>Right now, the mod is still in development. However, we have experimental builds available through CurseForge
+            and CircleCI. We provide servers for you to play on with these early access builds, with the hope that
+            we can squash all bugs before we release the finished product.</p>
+        <div class="horizontallist">
+            <div class="onethird">
+                <h3>Official Aether Testing Server</h3>
+                <p>This server runs the 1.12.2 versions of <a
+                        href="https://www.curseforge.com/minecraft/mc-mods/aether">Aether</a>
+                    and <a href="https://www.curseforge.com/minecraft/mc-mods/aether-ii">Aether II</a>.</p>
+            </div>
+            <div class="onethird">
+                <h3>Aether Nightly Testing Server</h3>
+                <p>This server keeps up to date with the latest nightly build from
+                    <a href="https://app.circleci.com/pipelines/github/Gilded-Games/The-Aether?branch=1.19">CircleCI</a>.
+                    This server is for those who want to preview the latest versions even with the greater risk of
+                    encountering bugs.</p>
+            </div>
+            <div class="onethird">
+                <h3>Aether Official Server (Not available yet! Sorry!)</h3>
+            </div>
+        </div>
+        <h3>Want to join these servers? Fill out the form below to be whitelisted!</h3>
+        <form method="post" action="script.php">
+            <label for="MinecraftName">Minecraft Username</label>
+            <input type="text" name="MinecraftName" id="MinecraftName" required>
+            <label for="DiscordName">Discord Username</label>
+            <input type="text" name="DiscordName" id="DiscordName" required>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        The Aether is owned by Gilded Games<br>
+        Website by Burning Cactus<br>
+        <a href="mailto:">Contact us!</a>
+    </footer>
+</div>
+</body>
+</html>
